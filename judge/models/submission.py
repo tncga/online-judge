@@ -80,6 +80,7 @@ class Submission(models.Model):
                                   on_delete=models.SET_NULL)
     was_rejudged = models.BooleanField(verbose_name=_('was rejudged by admin'), default=False)
     is_pretested = models.BooleanField(verbose_name=_('was ran on pretests only'), default=False)
+    is_locked = models.BooleanField(verbose_name=_('lock submission'), default=False)
 
     objects = TranslatedProblemForeignKeyQuerySet.as_manager()
 
