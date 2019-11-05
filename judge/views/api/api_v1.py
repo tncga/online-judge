@@ -42,7 +42,7 @@ def api_v1_contest_detail(request, contest):
     participations = (contest.users.filter(virtual=0, user__is_unlisted=False)
                       .prefetch_related('user__organizations')
                       .annotate(username=F('user__user__username'))
-                      .order_by('-score', 'cumtime') if can_see_rankings else [])
+                      .order_by('-score', 'cumtime', '-tiebreaker') if can_see_rankings else [])
 
     if not (in_contest or contest.ended or request.user.is_superuser or
             (request.user.is_authenticated and contest.organizers.filter(id=request.profile.id).exists())):
@@ -74,6 +74,7 @@ def api_v1_contest_detail(request, contest):
                 'user': participation.username,
                 'points': participation.score,
                 'cumtime': participation.cumtime,
+                'tiebreaker': participation.tiebreaker,
                 'solutions': contest.format.get_problem_breakdown(participation, problems),
             } for participation in participations],
     })

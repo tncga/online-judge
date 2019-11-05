@@ -252,6 +252,7 @@ class ContestParticipation(models.Model):
     real_start = models.DateTimeField(verbose_name=_('start time'), default=timezone.now, db_column='start')
     score = models.IntegerField(verbose_name=_('score'), default=0, db_index=True)
     cumtime = models.PositiveIntegerField(verbose_name=_('cumulative time'), default=0)
+    tiebreaker = models.FloatField(verbose_name=_('tie-breaking field'), default=0.0)
     virtual = models.IntegerField(verbose_name=_('virtual participation id'), default=LIVE,
                                   help_text=_('0 means non-virtual, otherwise the n-th virtual participation'))
     format_data = JSONField(verbose_name=_('contest format specific data'), null=True, blank=True)
