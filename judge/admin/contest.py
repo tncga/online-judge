@@ -121,7 +121,6 @@ class ContestAdmin(VersionAdmin):
         (_('Justice'), {'fields': ('banned_users',)}),
     )
     list_display = ('key', 'name', 'is_visible', 'is_rated', 'start_time', 'end_time', 'time_limit', 'user_count')
-    actions = ['make_visible', 'make_hidden']
     inlines = [ContestProblemInline]
     actions_on_top = True
     actions_on_bottom = True
@@ -129,6 +128,19 @@ class ContestAdmin(VersionAdmin):
     change_list_template = 'admin/judge/contest/change_list.html'
     filter_horizontal = ['rate_exclude']
     date_hierarchy = 'start_time'
+
+    def get_actions(self, request):
+        actions = super(ContestAdmin, self).get_actions(request)
+
+        if request.user.has_perm('judge.change_contest_visibility') or \
+                request.user.has_perm('judge.create_private_contest'):
+            func, name, desc = self.get_action('make_visible')
+            actions[name] = (func, name, desc)
+
+            func, name, desc = self.get_action('make_hidden')
+            actions[name] = (func, name, desc)
+
+        return actions
 
     def get_queryset(self, request):
         queryset = Contest.objects.all()
@@ -145,7 +157,19 @@ class ContestAdmin(VersionAdmin):
             readonly += ['access_code']
         if not request.user.has_perm('judge.create_private_contest'):
             readonly += ['is_private', 'private_contestants', 'is_organization_private', 'organizations']
+            if not request.user.had_perm('judge.change_contest_visibility'):
+                readonly += ['is_visible']
         return readonly
+
+    def save_model(self, request, obj, form, change):
+        if form.cleaned_data['is_visible']:
+            if not request.user.has_perm('judge.change_contest_visibility'):
+                if not form.cleaned_data['is_private'] and not form.cleaned_data['is_organization_private']:
+                    raise PermissionDenied
+                if not request.user.has_perm('judge.create_private_contest'):
+                    raise PermissionDenied
+
+        super().save_model(request, obj, form, change)
 
     def has_change_permission(self, request, obj=None):
         if not request.user.has_perm('judge.edit_own_contest'):
@@ -155,14 +179,20 @@ class ContestAdmin(VersionAdmin):
         return obj.organizers.filter(id=request.profile.id).exists()
 
     def make_visible(self, request, queryset):
-        count = queryset.update(is_visible=True)
+        filter = None
+        if not request.user.has_perm('judge.change_contest_visibility'):
+            filter = Q(is_private=True) | Q(is_organization_private=True)
+        count = queryset.filter(filter).update(is_visible=True)
         self.message_user(request, ungettext('%d contest successfully marked as visible.',
                                              '%d contests successfully marked as visible.',
                                              count) % count)
     make_visible.short_description = _('Mark contests as visible')
 
     def make_hidden(self, request, queryset):
-        count = queryset.update(is_visible=False)
+        filter = None
+        if not request.user.has_perm('judge.change_contest_visibility'):
+            filter = Q(is_private=True) | Q(is_organization_private=True)
+        count = queryset.filter(filter).update(is_visible=False)
         self.message_user(request, ungettext('%d contest successfully marked as hidden.',
                                              '%d contests successfully marked as hidden.',
                                              count) % count)
