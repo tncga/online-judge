@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-19 04:28+0000\n"
-"PO-Revision-Date: 2019-11-19 05:06\n"
+"PO-Revision-Date: 2019-11-23 04:07\n"
 "Last-Translator: Icyene\n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -3749,7 +3749,7 @@ msgstr "Voir en PDF"
 #: templates/problem/problem.html:101 templates/problem/problem.html:111
 #: templates/problem/problem.html:116
 msgid "Submit solution"
-msgstr ""
+msgstr "Soumettre solution"
 
 #: templates/problem/problem.html:104
 #, python-format
@@ -3847,11 +3847,11 @@ msgstr ""
 
 #: templates/problem/problem.html:299
 msgid "Request clarification"
-msgstr ""
+msgstr "Demander une clarification"
 
 #: templates/problem/problem.html:301
 msgid "Report an issue"
-msgstr ""
+msgstr "Reporter un problème"
 
 #: templates/problem/raw.html:62
 msgid "Time Limit:"
