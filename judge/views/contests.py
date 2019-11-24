@@ -181,6 +181,12 @@ class ContestMixin(object):
 
     def get_object(self, queryset=None):
         contest = super(ContestMixin, self).get_object(queryset)
+
+        profile = self.request.profile
+        if (profile is not None and
+                ContestParticipation.objects.filter(id=profile.current_contest_id, contest_id=contest.id).exists()):
+            return contest
+
         try:
             contest.access_check(self.request.user)
         except Contest.PrivateContest:
