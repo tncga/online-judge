@@ -203,30 +203,6 @@ class Contest(models.Model):
         pass
 
     def access_check(self, user):
-        # Contest is publicly visible
-        if self.is_visible:
-            # Contest is not private
-            if not self.is_private and not self.is_organization_private:
-                return
-            if user.is_authenticated:
-                in_org = self.organizations.filter(id__in=user.profile.organizations.all()).exists()
-                in_users = self.private_contestants.filter(id=user.profile.id).exists()
-
-                if not self.is_private and self.is_organization_private:
-                    if in_org:
-                        return
-                    raise self.PrivateContest()
-
-                if self.is_private and not self.is_organization_private:
-                    if in_users:
-                        return
-                    raise self.PrivateContest()
-
-                if self.is_private and self.is_organization_private:
-                    if in_org and in_users:
-                        return
-                    raise self.PrivateContest()
-
         # If the user can view all contests
         if user.has_perm('judge.see_private_contest'):
             return
@@ -234,7 +210,33 @@ class Contest(models.Model):
         # User can edit the contest
         if self.is_editable_by(user):
             return
-        raise self.Inaccessible()
+
+        # Contest is not publicly visible
+        if not self.is_visible:
+            raise self.Inaccessible()
+
+        # Contest is not private
+        if not self.is_private and not self.is_organization_private:
+            return
+
+        if user.is_authenticated:
+            in_org = self.organizations.filter(id__in=user.profile.organizations.all()).exists()
+            in_users = self.private_contestants.filter(id=user.profile.id).exists()
+
+            if not self.is_private and self.is_organization_private:
+                if in_org:
+                    return
+                raise self.PrivateContest()
+
+            if self.is_private and not self.is_organization_private:
+                if in_users:
+                    return
+                raise self.PrivateContest()
+
+            if self.is_private and self.is_organization_private:
+                if in_org and in_users:
+                    return
+                raise self.PrivateContest()
 
     def is_accessible_by(self, user):
         try:
