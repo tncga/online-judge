@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 04:28+0000\n"
-"PO-Revision-Date: 2019-11-23 04:07\n"
+"POT-Creation-Date: 2019-11-26 19:44+0000\n"
+"PO-Revision-Date: 2019-11-26 20:07\n"
 "Last-Translator: Icyene\n"
 "Language-Team: Hungarian\n"
 "Language: hu_HU\n"
@@ -2607,7 +2607,7 @@ msgstr ""
 msgid "Status"
 msgstr "Státusz"
 
-#: judge/views/status.py:108
+#: judge/views/status.py:107
 msgid "Version matrix"
 msgstr "Verzió mátrix"
 

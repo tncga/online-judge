@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-19 04:28+0000\n"
-"PO-Revision-Date: 2019-11-23 04:07\n"
+"POT-Creation-Date: 2019-11-26 19:44+0000\n"
+"PO-Revision-Date: 2019-11-26 20:08\n"
 "Last-Translator: Icyene\n"
 "Language-Team: Korean\n"
 "Language: ko_KR\n"
@@ -2591,7 +2591,7 @@ msgstr "언어 통계"
 msgid "Status"
 msgstr "현재 상태"
 
-#: judge/views/status.py:108
+#: judge/views/status.py:107
 msgid "Version matrix"
 msgstr ""
 
