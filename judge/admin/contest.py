@@ -153,6 +153,10 @@ class ContestAdmin(VersionAdmin):
             return True
         return obj.organizers.filter(id=request.profile.id).exists()
 
+    def _rescore(self, request, contest_key):
+        from judge.tasks import rescore_contest
+        transaction.on_commit(rescore_contest.s(contest_key).delay)
+
     def make_visible(self, request, queryset):
         count = queryset.update(is_visible=True)
         self.message_user(request, ungettext('%d contest successfully marked as visible.',
@@ -218,6 +222,11 @@ class ContestAdmin(VersionAdmin):
             Q(user__user_permissions__codename__in=perms),
         ).distinct()
         return form
+
+    def save_model(self, request, obj, form, change):
+        super(ContestAdmin, self).save_model(request, obj, form, change)
+        if form.changed_data and any(f in form.changed_data for f in ('format_config', 'format_name')):
+            self._rescore(request, obj.key)
 
 
 class ContestParticipationForm(ModelForm):
