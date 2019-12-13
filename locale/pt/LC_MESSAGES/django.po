@@ -2,16 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-10 02:34+0000\n"
-"PO-Revision-Date: 2019-12-10 03:03\n"
-"Last-Translator: Icyene\n"
+"POT-Creation-Date: 2019-12-13 03:52+0000\n"
+"PO-Revision-Date: 2019-12-13 04:03\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Portuguese, Brazilian\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
 "X-Crowdin-Project: dmoj\n"
 "X-Crowdin-Language: pt-BR\n"
 "X-Crowdin-File: django.po\n"
@@ -2476,12 +2475,12 @@ msgstr ""
 msgid "You have exceeded the submission limit for this problem."
 msgstr ""
 
-#: judge/views/problem.py:627 judge/views/problem.py:630
+#: judge/views/problem.py:630 judge/views/problem.py:633
 #, python-format
 msgid "Submit to %(problem)s"
 msgstr ""
 
-#: judge/views/problem.py:646
+#: judge/views/problem.py:649
 msgid "Clone Problem"
 msgstr ""
 
