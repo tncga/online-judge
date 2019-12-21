@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-13 03:52+0000\n"
-"PO-Revision-Date: 2019-12-13 04:03\n"
+"POT-Creation-Date: 2019-12-21 17:42+0000\n"
+"PO-Revision-Date: 2019-12-21 18:03\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -1730,8 +1730,8 @@ msgid "language description"
 msgstr "言語の説明"
 
 #: judge/models/runtime.py:43
-msgid "Use field this to inform users of quirks with your environment, additional restrictions, etc."
-msgstr "このフィールドは、あなたの環境の独自性や追加の制限などを利用者に知らせるために使ってください。"
+msgid "Use this field to inform users of quirks with your environment, additional restrictions, etc."
+msgstr ""
 
 #: judge/models/runtime.py:45
 msgid "extension"
@@ -1774,8 +1774,8 @@ msgid "time of creation"
 msgstr "作成日"
 
 #: judge/models/runtime.py:123
-msgid "A key to authenticated this judge"
-msgstr "この判定器を認証する鍵"
+msgid "A key to authenticate this judge"
+msgstr ""
 
 #: judge/models/runtime.py:124
 msgid "authentication key"
@@ -2747,6 +2747,16 @@ msgstr "不正な上流データ: %s"
 #: judge/views/widgets.py:68
 msgid "Bad latitude or longitude"
 msgstr "悪い緯度または経度です"
+
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:13
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:27
+msgid "Photo"
+msgstr ""
+
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:14
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:28
+msgid "Photos"
+msgstr ""
 
 #: src/dmoj-wpadmin/test_project/apps/authors/models.py:9
 msgid "first name"

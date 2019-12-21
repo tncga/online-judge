@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-13 03:52+0000\n"
-"PO-Revision-Date: 2019-12-13 04:04\n"
+"POT-Creation-Date: 2019-12-21 17:42+0000\n"
+"PO-Revision-Date: 2019-12-21 18:04\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -1740,8 +1740,8 @@ msgid "language description"
 msgstr "dil açıklaması"
 
 #: judge/models/runtime.py:43
-msgid "Use field this to inform users of quirks with your environment, additional restrictions, etc."
-msgstr "Bu alanı kullanıcıları çalışma ortamının farklılıkları hakkında bilgilendirmek için kullan. (örn. v8dmoj'daki print fonksiyonu)"
+msgid "Use this field to inform users of quirks with your environment, additional restrictions, etc."
+msgstr ""
 
 #: judge/models/runtime.py:45
 msgid "extension"
@@ -1784,8 +1784,8 @@ msgid "time of creation"
 msgstr "oluşturulma zamanı"
 
 #: judge/models/runtime.py:123
-msgid "A key to authenticated this judge"
-msgstr "Bu judge'ın kimliğini doğrulamak için bir anahtar"
+msgid "A key to authenticate this judge"
+msgstr ""
 
 #: judge/models/runtime.py:124
 msgid "authentication key"
@@ -2763,6 +2763,16 @@ msgstr "Gelen veri geçersiz: %s"
 #: judge/views/widgets.py:68
 msgid "Bad latitude or longitude"
 msgstr "Hatalı enlem veya boylam"
+
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:13
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:27
+msgid "Photo"
+msgstr ""
+
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:14
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:28
+msgid "Photos"
+msgstr ""
 
 #: src/dmoj-wpadmin/test_project/apps/authors/models.py:9
 msgid "first name"

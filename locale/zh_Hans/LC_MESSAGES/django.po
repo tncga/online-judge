@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-13 03:52+0000\n"
-"PO-Revision-Date: 2019-12-13 04:03\n"
+"POT-Creation-Date: 2019-12-21 17:42+0000\n"
+"PO-Revision-Date: 2019-12-21 18:03\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -1730,8 +1730,8 @@ msgid "language description"
 msgstr "语言描述"
 
 #: judge/models/runtime.py:43
-msgid "Use field this to inform users of quirks with your environment, additional restrictions, etc."
-msgstr "使用本空间来表达运行环境的特性、额外限制等信息。"
+msgid "Use this field to inform users of quirks with your environment, additional restrictions, etc."
+msgstr ""
 
 #: judge/models/runtime.py:45
 msgid "extension"
@@ -1774,8 +1774,8 @@ msgid "time of creation"
 msgstr "创建时间"
 
 #: judge/models/runtime.py:123
-msgid "A key to authenticated this judge"
-msgstr "裁判服务器连接密匙"
+msgid "A key to authenticate this judge"
+msgstr ""
 
 #: judge/models/runtime.py:124
 msgid "authentication key"
@@ -2747,6 +2747,16 @@ msgstr "无效的上游数据： %s"
 #: judge/views/widgets.py:68
 msgid "Bad latitude or longitude"
 msgstr "无效的纬度或经度"
+
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:13
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:27
+msgid "Photo"
+msgstr ""
+
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:14
+#: src/django-sortedm2m/sortedm2m_tests/migrations_tests/models.py:28
+msgid "Photos"
+msgstr ""
 
 #: src/dmoj-wpadmin/test_project/apps/authors/models.py:9
 msgid "first name"
