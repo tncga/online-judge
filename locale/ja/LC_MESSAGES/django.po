@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-21 17:42+0000\n"
-"PO-Revision-Date: 2019-12-21 18:03\n"
+"POT-Creation-Date: 2019-12-22 00:17+0000\n"
+"PO-Revision-Date: 2019-12-22 01:05\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Japanese\n"
 "Language: ja_JP\n"
@@ -176,21 +176,21 @@ msgid "%d submission was successfully scheduled for rejudging."
 msgid_plural "%d submissions were successfully scheduled for rejudging."
 msgstr[0] "%d 個の提出を再判定するよう設定しました。"
 
-#: judge/admin/contest.py:264
+#: judge/admin/contest.py:256
 #, python-format
 msgid "%d participation recalculated."
 msgid_plural "%d participations recalculated."
 msgstr[0] "%d 人の参加者を再計算。"
 
-#: judge/admin/contest.py:267
+#: judge/admin/contest.py:259
 msgid "Recalculate results"
 msgstr "再計算の結果"
 
-#: judge/admin/contest.py:271 judge/admin/organization.py:65
+#: judge/admin/contest.py:263 judge/admin/organization.py:65
 msgid "username"
 msgstr "利用者名"
 
-#: judge/admin/contest.py:276 templates/base.html:258
+#: judge/admin/contest.py:268 templates/base.html:258
 msgid "virtual"
 msgstr "仮想"
 
@@ -207,7 +207,7 @@ msgid "Summary"
 msgstr "概要"
 
 #: judge/admin/interface.py:107 judge/models/contest.py:257
-#: judge/models/contest.py:367 judge/models/profile.py:191
+#: judge/models/contest.py:380 judge/models/profile.py:191
 msgid "user"
 msgstr "利用者"
 
@@ -841,8 +841,8 @@ msgstr "コンテストのアクセス コード"
 msgid "Create private contests"
 msgstr "プライベートなコンテストの生成"
 
-#: judge/models/contest.py:248 judge/models/contest.py:332
-#: judge/models/contest.py:368 judge/models/contest.py:390
+#: judge/models/contest.py:248 judge/models/contest.py:345
+#: judge/models/contest.py:381 judge/models/contest.py:403
 #: judge/models/submission.py:83
 msgid "contest"
 msgstr "コンテスト"
@@ -883,122 +883,122 @@ msgstr ""
 msgid "contest format specific data"
 msgstr ""
 
-#: judge/models/contest.py:318
+#: judge/models/contest.py:331
 #, python-format
 msgid "%s spectating in %s"
 msgstr "%s は %s を観戦している"
 
-#: judge/models/contest.py:320
+#: judge/models/contest.py:333
 #, python-format
 msgid "%s in %s, v%d"
 msgstr "%s は %s 中で v%d として参加"
 
-#: judge/models/contest.py:321
+#: judge/models/contest.py:334
 #, python-format
 msgid "%s in %s"
 msgstr "%s は %s に参加"
 
-#: judge/models/contest.py:324
+#: judge/models/contest.py:337
 msgid "contest participation"
 msgstr "コンテスト参加者"
 
-#: judge/models/contest.py:325
+#: judge/models/contest.py:338
 msgid "contest participations"
 msgstr "コンテスト参加者"
 
-#: judge/models/contest.py:331 judge/models/contest.py:352
-#: judge/models/contest.py:391 judge/models/problem.py:352
+#: judge/models/contest.py:344 judge/models/contest.py:365
+#: judge/models/contest.py:404 judge/models/problem.py:352
 #: judge/models/problem.py:357 judge/models/problem.py:375
 #: judge/models/problem_data.py:35
 msgid "problem"
 msgstr "課題"
 
-#: judge/models/contest.py:333 judge/models/contest.py:356
+#: judge/models/contest.py:346 judge/models/contest.py:369
 #: judge/models/problem.py:129
 msgid "points"
 msgstr "点数"
 
-#: judge/models/contest.py:334
+#: judge/models/contest.py:347
 msgid "partial"
 msgstr "部分点"
 
-#: judge/models/contest.py:335 judge/models/contest.py:357
+#: judge/models/contest.py:348 judge/models/contest.py:370
 msgid "is pretested"
 msgstr "予備テストされているか"
 
-#: judge/models/contest.py:336 judge/models/interface.py:43
+#: judge/models/contest.py:349 judge/models/interface.py:43
 msgid "order"
 msgstr "順番"
 
-#: judge/models/contest.py:337
+#: judge/models/contest.py:350
 msgid "output prefix length override"
 msgstr "出力プレフィックス長のオーバーライド"
 
-#: judge/models/contest.py:338
+#: judge/models/contest.py:351
 msgid "Maximum number of submissions for this problem, or 0 for no limit."
 msgstr "この課題への提出物の最大数、制限なしの場合は 0 。"
 
-#: judge/models/contest.py:340
+#: judge/models/contest.py:353
 msgid "Why include a problem you can't submit to?"
 msgstr "なぜあなたが提出できない課題を含むのか？"
 
-#: judge/models/contest.py:345
+#: judge/models/contest.py:358
 msgid "contest problem"
 msgstr "コンテストの課題"
 
-#: judge/models/contest.py:346
+#: judge/models/contest.py:359
 msgid "contest problems"
 msgstr "コンテストの課題"
 
-#: judge/models/contest.py:350 judge/models/submission.py:181
+#: judge/models/contest.py:363 judge/models/submission.py:181
 msgid "submission"
 msgstr "提出"
 
-#: judge/models/contest.py:354 judge/models/contest.py:369
+#: judge/models/contest.py:367 judge/models/contest.py:382
 msgid "participation"
 msgstr "参加者"
 
-#: judge/models/contest.py:358
+#: judge/models/contest.py:371
 msgid "Whether this submission was ran only on pretests."
 msgstr "この提出物が予備テストだけを実行したのかどうか。"
 
-#: judge/models/contest.py:362
+#: judge/models/contest.py:375
 msgid "contest submission"
 msgstr "コンテスト提出"
 
-#: judge/models/contest.py:363
+#: judge/models/contest.py:376
 msgid "contest submissions"
 msgstr "コンテスト提出"
 
-#: judge/models/contest.py:371
+#: judge/models/contest.py:384
 msgid "rank"
 msgstr "順位"
 
-#: judge/models/contest.py:372
+#: judge/models/contest.py:385
 msgid "rating"
 msgstr "評価"
 
-#: judge/models/contest.py:373
+#: judge/models/contest.py:386
 msgid "volatility"
 msgstr "変動率"
 
-#: judge/models/contest.py:374
+#: judge/models/contest.py:387
 msgid "last rated"
 msgstr "最後の評価"
 
-#: judge/models/contest.py:378
+#: judge/models/contest.py:391
 msgid "contest rating"
 msgstr "コンテストの評価"
 
-#: judge/models/contest.py:379
+#: judge/models/contest.py:392
 msgid "contest ratings"
 msgstr "コンテストの評価"
 
-#: judge/models/contest.py:398
+#: judge/models/contest.py:411
 msgid "contest moss result"
 msgstr ""
 
-#: judge/models/contest.py:399
+#: judge/models/contest.py:412
 msgid "contest moss results"
 msgstr ""
 
@@ -2167,83 +2167,83 @@ msgstr "サイトから編集された"
 msgid "Editing comment"
 msgstr "コメントの編集"
 
-#: judge/views/contests.py:54 judge/views/contests.py:216
-#: judge/views/contests.py:219 judge/views/contests.py:390
+#: judge/views/contests.py:55 judge/views/contests.py:215
+#: judge/views/contests.py:218 judge/views/contests.py:389
 msgid "No such contest"
 msgstr "そのようなコンテストはありません"
 
-#: judge/views/contests.py:55 judge/views/contests.py:217
+#: judge/views/contests.py:56 judge/views/contests.py:216
 #, python-format
 msgid "Could not find a contest with the key \"%s\"."
 msgstr "鍵 \"%s\" を持つコンテストは見つかりませんでした。"
 
-#: judge/views/contests.py:80
+#: judge/views/contests.py:81
 msgid "Contests"
 msgstr "コンテスト"
 
-#: judge/views/contests.py:220
+#: judge/views/contests.py:219
 msgid "Could not find such contest."
 msgstr "このようなコンテストは見つかりませんでした。"
 
-#: judge/views/contests.py:223
+#: judge/views/contests.py:222
 #, python-format
 msgid "Access to contest \"%s\" denied"
 msgstr "コンテスト \"%s\" へのアクセスは拒否されました"
 
-#: judge/views/contests.py:247
+#: judge/views/contests.py:246
 msgid "Clone Contest"
 msgstr ""
 
-#: judge/views/contests.py:310
+#: judge/views/contests.py:309
 msgid "Contest not ongoing"
 msgstr "開催中ではないコンテスト"
 
-#: judge/views/contests.py:311
+#: judge/views/contests.py:310
 #, python-format
 msgid "\"%s\" is not currently ongoing."
 msgstr "\"%s\" は現在開催中ではありません。"
 
-#: judge/views/contests.py:315
+#: judge/views/contests.py:314
 msgid "Already in contest"
 msgstr "既にコンテストに参加しています"
 
-#: judge/views/contests.py:316
+#: judge/views/contests.py:315
 #, python-format
 msgid "You are already in a contest: \"%s\"."
 msgstr "あなたは既にコンテストに参加しています: \"%s\"。"
 
-#: judge/views/contests.py:319
+#: judge/views/contests.py:318
 msgid "Banned from joining"
 msgstr ""
 
-#: judge/views/contests.py:320
+#: judge/views/contests.py:319
 msgid "You have been declared persona non grata for this contest. You are permanently barred from joining this contest."
 msgstr ""
 
-#: judge/views/contests.py:380
+#: judge/views/contests.py:379
 #, python-format
 msgid "Enter access code for \"%s\""
 msgstr "\"%s\" のアクセスコードを入力してください"
 
-#: judge/views/contests.py:391
+#: judge/views/contests.py:390
 #, python-format
 msgid "You are not in contest \"%s\"."
 msgstr "あなたはコンテストに参加していません: \"%s\"。"
 
-#: judge/views/contests.py:410
+#: judge/views/contests.py:409
 msgid "ContestCalendar requires integer year and month"
 msgstr ""
 
-#: judge/views/contests.py:450
+#: judge/views/contests.py:449
 #, python-format
 msgid "Contests in %(month)s"
 msgstr "%(month)s 年のコンテスト"
 
-#: judge/views/contests.py:450
+#: judge/views/contests.py:449
 msgid "F Y"
 msgstr ""
 
-#: judge/views/contests.py:497
+#: judge/views/contests.py:496
 #, python-format
 msgid "%s Statistics"
 msgstr ""
@@ -2275,17 +2275,17 @@ msgstr "ライブ"
 msgid "Participation"
 msgstr "参加"
 
-#: judge/views/contests.py:724
+#: judge/views/contests.py:743
 #, python-format
 msgid "%s MOSS Results"
 msgstr ""
 
-#: judge/views/contests.py:751
+#: judge/views/contests.py:770
 #, python-format
 msgid "Running MOSS for %s..."
 msgstr ""
 
-#: judge/views/contests.py:774
+#: judge/views/contests.py:793
 #, python-format
 msgid "Contest tag: %s"
 msgstr "コンテストタグ: %s"
@@ -2663,33 +2663,38 @@ msgstr "問題の説明"
 msgid "New ticket for %s"
 msgstr "%s への新しいチケット"
 
-#: judge/views/ticket.py:139
+#: judge/views/ticket.py:142
 #, python-format
 msgid "%(title)s - Ticket %(id)d"
 msgstr "%(title)s - チケット %(id)d"
 
-#: judge/views/ticket.py:248
+#: judge/views/ticket.py:251
 #, python-format
 msgid "Tickets - Page %(number)d of %(total)d"
 msgstr "チケットのページ %(number)d / %(total)d"
 
-#: judge/views/ticket.py:297
+#: judge/views/ticket.py:300
 #, python-format
 msgid "New Ticket: %s"
 msgstr "新しいチケット: %s"
 
-#: judge/views/ticket.py:298
+#: judge/views/ticket.py:301
 #, python-format
 msgid "#%(id)d, assigned to: %(users)s"
 msgstr "#%(id)d,  %(users)s に割り当てられた"
 
-#: judge/views/ticket.py:300
+#: judge/views/ticket.py:303
 msgid ", "
 msgstr "、"
 
-#: judge/views/ticket.py:300
+#: judge/views/ticket.py:303
 msgid "no one"
 msgstr "誰もいません"
+
+#: judge/views/ticket.py:323
+#, python-format
+msgid "New Ticket Message For: %s"
+msgstr ""
 
 #: judge/views/totp.py:42 templates/registration/totp_enable.html:86
 msgid "Enable Two Factor Authentication"
@@ -2947,6 +2952,7 @@ msgstr "こんにちは、<b>%(username)s</b>。"
 
 #: templates/base.html:220 templates/comments/list.html:89
 #: templates/contest/contest-list-tabs.html:24
+#: templates/contest/ranking-table.html:39
 #: templates/problem/problem-list-tabs.html:6
 #: templates/submission/info-base.html:12
 #: templates/submission/submission-list-tabs.html:15
@@ -3381,20 +3387,27 @@ msgstr "次の組織だけがこのコンテストをアクセスできます:"
 msgid "Organization"
 msgstr "組織"
 
-#: templates/contest/ranking-table.html:27
-#, python-brace-format
-msgid "Started on {time}"
-msgstr "{time} に開始した"
-
 #: templates/contest/ranking-table.html:30
-msgid "Participation ended."
-msgstr "参加が終了しました。"
+msgid "Un-Disqualify"
+msgstr ""
 
-#: templates/contest/ranking.html:236
+#: templates/contest/ranking-table.html:33
+msgid "Disqualify"
+msgstr ""
+
+#: templates/contest/ranking.html:173
+msgid "Are you sure you want to disqualify this participation?"
+msgstr ""
+
+#: templates/contest/ranking.html:178
+msgid "Are you sure you want to un-disqualify this participation?"
+msgstr ""
+
+#: templates/contest/ranking.html:252
 msgid "View user participation"
 msgstr "利用者の参加を見る"
 
-#: templates/contest/ranking.html:240
+#: templates/contest/ranking.html:256
 msgid "Show organizations"
 msgstr "組織を表示する"
 
@@ -4329,7 +4342,7 @@ msgstr "担当者"
 msgid "Title"
 msgstr "題目"
 
-#: templates/ticket/list.html:264 templates/ticket/ticket.html:304
+#: templates/ticket/list.html:264 templates/ticket/ticket.html:328
 msgid "Assignees"
 msgstr "担当者"
 
@@ -4341,31 +4354,31 @@ msgstr "チケットを開いてくれてありがとう!"
 msgid "Please keep in mind that this form is for reporting issues with a problem statement, and not for asking for help. If you require assistance on solving a problem, ask in the comments instead."
 msgstr "このフォームは課題設定の問題を報告するためのものであり、助けを求めるためのものではないことを心に留めてください。課題を解くのに援助が必要な場合は、代わりにコメントで尋ねて下さい。"
 
-#: templates/ticket/ticket.html:298
+#: templates/ticket/ticket.html:322
 msgid "Associated object"
 msgstr "関連するオブジェクト"
 
-#: templates/ticket/ticket.html:309
+#: templates/ticket/ticket.html:333
 msgid "No one is assigned."
 msgstr "誰も割り当てられていません。"
 
-#: templates/ticket/ticket.html:315
+#: templates/ticket/ticket.html:339
 msgid "Close ticket"
 msgstr "チケットを閉じる"
 
-#: templates/ticket/ticket.html:317
+#: templates/ticket/ticket.html:341
 msgid "Reopen ticket"
 msgstr "チケットを再度開く"
 
-#: templates/ticket/ticket.html:321
+#: templates/ticket/ticket.html:345
 msgid "Assignee notes"
 msgstr "担当者メモ"
 
-#: templates/ticket/ticket.html:328 templates/widgets/select_all.html:4
+#: templates/ticket/ticket.html:352 templates/widgets/select_all.html:4
 msgid "Nothing here."
 msgstr "何もありません。"
 
-#: templates/ticket/ticket.html:378
+#: templates/ticket/ticket.html:385
 msgid "Post"
 msgstr "投稿する"
 
