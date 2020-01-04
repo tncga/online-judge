@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-31 04:34+0000\n"
-"PO-Revision-Date: 2019-12-31 05:04\n"
+"POT-Creation-Date: 2020-01-04 19:53+0000\n"
+"PO-Revision-Date: 2020-01-04 20:07\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -2454,33 +2454,33 @@ msgstr " {0} - Problem analizi"
 msgid "Editorial for <a href=\"{1}\">{0}</a>"
 msgstr "<a href=\"{1}\">{0}</a> için problem analizi"
 
-#: judge/views/problem.py:285 templates/contest/contest.html:79
+#: judge/views/problem.py:286 templates/contest/contest.html:79
 #: templates/user/user-tabs.html:5 templates/user/users-table.html:23
 msgid "Problems"
 msgstr "Problemler"
 
-#: judge/views/problem.py:546
+#: judge/views/problem.py:547
 msgid "Banned from submitting"
 msgstr "Çözüm gönderme engellendi"
 
-#: judge/views/problem.py:547
+#: judge/views/problem.py:548
 msgid "You have been declared persona non grata for this problem. You are permanently barred from submitting this problem."
 msgstr "Bu problem için istenmeyen adam olarak işaretlendin. Çözüm gönderemezsin."
 
-#: judge/views/problem.py:560
+#: judge/views/problem.py:561
 msgid "Too many submissions"
 msgstr "Çok fazla çözüm gönderisi"
 
-#: judge/views/problem.py:561
+#: judge/views/problem.py:562
 msgid "You have exceeded the submission limit for this problem."
 msgstr "Bu soru için çözüm gönderi sınırını geçtin."
 
-#: judge/views/problem.py:630 judge/views/problem.py:633
+#: judge/views/problem.py:631 judge/views/problem.py:634
 #, python-format
 msgid "Submit to %(problem)s"
 msgstr "Çözüm gönder -%(problem)s"
 
-#: judge/views/problem.py:649
+#: judge/views/problem.py:650
 msgid "Clone Problem"
 msgstr ""
 

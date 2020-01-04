@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-12-31 04:34+0000\n"
-"PO-Revision-Date: 2019-12-31 05:04\n"
+"POT-Creation-Date: 2020-01-04 19:53+0000\n"
+"PO-Revision-Date: 2020-01-04 20:07\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Vietnamese\n"
 "Language: vi_VN\n"
@@ -2439,33 +2439,33 @@ msgstr "Hướng giải của {0}"
 msgid "Editorial for <a href=\"{1}\">{0}</a>"
 msgstr "Hướng giải của <a href=\"{1}\">{0}</a>"
 
-#: judge/views/problem.py:285 templates/contest/contest.html:79
+#: judge/views/problem.py:286 templates/contest/contest.html:79
 #: templates/user/user-tabs.html:5 templates/user/users-table.html:23
 msgid "Problems"
 msgstr "Đề bài"
 
-#: judge/views/problem.py:546
+#: judge/views/problem.py:547
 msgid "Banned from submitting"
 msgstr ""
 
-#: judge/views/problem.py:547
+#: judge/views/problem.py:548
 msgid "You have been declared persona non grata for this problem. You are permanently barred from submitting this problem."
 msgstr "Bạn đã được coi là cá nhận không tính điểm cho đề này. Bạn không thể nộp bài."
 
-#: judge/views/problem.py:560
+#: judge/views/problem.py:561
 msgid "Too many submissions"
 msgstr "Quá nhiều bài nộp"
 
-#: judge/views/problem.py:561
+#: judge/views/problem.py:562
 msgid "You have exceeded the submission limit for this problem."
 msgstr "Bạn đã vượt quá giới hạn lần nộp của bài này."
 
-#: judge/views/problem.py:630 judge/views/problem.py:633
+#: judge/views/problem.py:631 judge/views/problem.py:634
 #, python-format
 msgid "Submit to %(problem)s"
 msgstr "Nộp lời giải cho %(problem)s"
 
-#: judge/views/problem.py:649
+#: judge/views/problem.py:650
 msgid "Clone Problem"
 msgstr "Nhân bản bài tập"
 
