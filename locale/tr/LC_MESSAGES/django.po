@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dmoj\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-04 19:53+0000\n"
-"PO-Revision-Date: 2020-01-04 20:07\n"
+"POT-Creation-Date: 2020-01-10 14:40+0000\n"
+"PO-Revision-Date: 2020-01-10 15:04\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
@@ -2467,20 +2467,20 @@ msgstr "Çözüm gönderme engellendi"
 msgid "You have been declared persona non grata for this problem. You are permanently barred from submitting this problem."
 msgstr "Bu problem için istenmeyen adam olarak işaretlendin. Çözüm gönderemezsin."
 
-#: judge/views/problem.py:561
+#: judge/views/problem.py:562
 msgid "Too many submissions"
 msgstr "Çok fazla çözüm gönderisi"
 
-#: judge/views/problem.py:562
+#: judge/views/problem.py:563
 msgid "You have exceeded the submission limit for this problem."
 msgstr "Bu soru için çözüm gönderi sınırını geçtin."
 
-#: judge/views/problem.py:631 judge/views/problem.py:634
+#: judge/views/problem.py:633 judge/views/problem.py:636
 #, python-format
 msgid "Submit to %(problem)s"
 msgstr "Çözüm gönder -%(problem)s"
 
-#: judge/views/problem.py:650
+#: judge/views/problem.py:652
 msgid "Clone Problem"
 msgstr ""
 
